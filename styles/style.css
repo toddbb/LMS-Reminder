@@ -277,6 +277,21 @@ table > tbody > tr > td > ul {
    color: gray;
 }
 
+.overlay-print {
+   position: fixed;
+   right: 20px;
+   top: 20px;
+}
+.overlay-print > button {
+   width: 80px;
+   height: 34px;
+   border: none;
+   background-color: gray;
+   opacity: 0.3;
+   color: white;
+   border-radius: 6px;
+}
+
 /***************************************************************************/
 /***********       CLASSES CASCADED LAST          *************************/
 /***************************************************************************/
@@ -332,5 +347,8 @@ table > tbody > tr > td > ul {
 
    .reminder-vocab-container > .cell:nth-child(3n) {
       page-break-after: auto;
+   }
+   .no-print {
+      display: none;
    }
 }

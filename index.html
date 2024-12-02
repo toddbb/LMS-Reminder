@@ -7,6 +7,9 @@
       <link rel="stylesheet" href="styles/style.css" />
    </head>
    <body>
+      <div class="overlay-print">
+         <button class="no-print" onclick="printIframe()">Print</button>
+      </div>
       <div class="reminder-wrapper a4">
          <div
             class="reminder-row reminder-logo flex align-center justify-center"
@@ -536,6 +539,10 @@
             </div>
          </div>
       </div>
-      <script src="scripts/script.js"></script>
+      <script>
+         function printIframe() {
+             window.print();
+         }
+     </script>
    </body>
 </html>
